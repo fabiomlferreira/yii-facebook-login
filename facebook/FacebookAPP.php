@@ -27,8 +27,8 @@ class FacebookAPP extends CApplicationComponent {
     private function renderFacebook()
     {
     	$this->facebook = new Facebook(array(
-		  'appId'  => '180865465392283',
-		  'secret' => '31ea2ce407c40bf1f167182cb79af9b0',
+		  'appId'  => '',
+		  'secret' => '',
 		));
 			
 	    // Get User ID
@@ -80,7 +80,7 @@ class FacebookAPP extends CApplicationComponent {
 			    'caption' => "$caption",
 			    'link' => "$link",
 			    'description' => "$description",
-			    'picture' => "http://www.produtooficial.com.br/images/facebook-logo.jpg",
+			    'picture' => "$picture",
 			    'actions' => array(array(
 			    	'name' => "$actions_name",
 			    	'link' => "$actions_link"
