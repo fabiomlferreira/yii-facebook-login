@@ -14,7 +14,7 @@ class FacebookAPP extends CApplicationComponent {
     public $fb_user_profile;
     public $facebook;
     public $scope = 'email, publish_stream, user_birthday';
-    public $pageId = 'produtooficialesportes';
+    public $pageId = 'your-page-id';
     
     /**
     * Run Widget
@@ -27,8 +27,8 @@ class FacebookAPP extends CApplicationComponent {
     private function renderFacebook()
     {
     	$this->facebook = new Facebook(array(
-		  'appId'  => '',
-		  'secret' => '',
+		  'appId'  => 'your-app-id',
+		  'secret' => 'your-secret',
 		));
 			
 	    // Get User ID
