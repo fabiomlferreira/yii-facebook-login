@@ -6,11 +6,18 @@ Plugin usado para fazer a integração com o facebook em sistemas com YII.
 Configuracao
 -------
 
+Copiar arquivos para /protected/components/
+
+Configar o component em: 
 
 * /protect/conf/main.php
 
-		'facebook' => array(
-			'class' => 'application.components.facebook.FacebookAPP',
+		'components'=>array(
+		...
+			'facebook' => array(
+				'class' => 'application.components.facebook.FacebookAPP',
+			),
+		...
 		),
 
 Uso
